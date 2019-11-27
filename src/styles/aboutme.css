@@ -1,0 +1,31 @@
+.biography-wrapper {
+  background-image: linear-gradient(to right, #ae3918, #e9ba4e);
+}
+
+.about-section {
+  padding: 99px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.about-text {
+  color: var(--body-text-color);
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+
+.about-text h1 {
+  font-size: var(--h1-font);
+}
+
+.about-text h2 {
+  padding-top: 10%;
+  font-size: var(--h2-font);
+}
+
+.portrait {
+  padding-left: 10px;
+}
+.portrait img {
+  width: 600px;
+}
