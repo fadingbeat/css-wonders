@@ -1,1 +1,8 @@
 node_modules
+myportfolio_workspace.code-workspace
+
+.sass-cache
+.sass-cache/*
+
+.vscode/
+
