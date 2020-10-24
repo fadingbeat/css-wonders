@@ -193,6 +193,11 @@ main {
       border-color: #8e4162;
       transition: all 0.5s ease-out; }
 
+.portfolio-gallery {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr); }
+
 .boxes {
   display: flex;
   flex-wrap: wrap;

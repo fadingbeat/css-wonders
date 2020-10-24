@@ -127,6 +127,13 @@ main {
   }
 }
 
+// Gallery page
+.portfolio-gallery {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 // Contact Page
 .boxes {
   display: flex;
