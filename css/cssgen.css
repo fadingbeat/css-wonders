@@ -1,0 +1,13 @@
+h1::selection,
+.text-secondary::selection {
+  background: #8b4e5d;
+  color: darkgrey;
+}
+
+.text-primary::selection {
+  background: #8b4e5d;
+}
+
+h2::selection {
+  background: #8b4e5d;
+}
