@@ -8,7 +8,8 @@
 
 // Desktops & Laptops
 @include mediaLg {
-  .projects {
+  .projects,
+  .portfolio-gallery {
     grid-template-columns: repeat(3, 1fr);
   }
 }
@@ -60,18 +61,25 @@
       "job3";
     grid-template-columns: 1fr;
   }
-  .projects {
+  .projects,
+  .portfolio-gallery {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 // Smartphones
 @include mediaSm {
+  main {
+    padding: 4rem 0;
+  }
   main#home h1 {
     margin-top: 10vh;
   }
-
-  .projects {
+  .projects,
+  .portfolio-gallery {
     grid-template-columns: 1fr;
+  }
+  #gallery h1 {
+    font-size: 56px;
   }
 }

@@ -167,6 +167,8 @@ main {
     margin: auto;
     border-radius: 50%;
     border: #8e4162 3px solid; }
+  .about-info a:hover {
+    color: #8e4162; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -192,6 +194,14 @@ main {
       opacity: 0.5;
       border-color: #8e4162;
       transition: all 0.5s ease-out; }
+
+.portfolio-gallery {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr); }
+
+.portfolio-gallery .item img {
+  width: 110px; }
 
 .boxes {
   display: flex;
@@ -241,7 +251,8 @@ main {
     grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
-  .projects {
+  .projects,
+  .portfolio-gallery {
     grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
@@ -273,11 +284,17 @@ main {
   .about-info {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
-  .projects {
+  .projects,
+  .portfolio-gallery {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
+  main {
+    padding: 4rem 0; }
   main#home h1 {
     margin-top: 10vh; }
-  .projects {
-    grid-template-columns: 1fr; } }
+  .projects,
+  .portfolio-gallery {
+    grid-template-columns: 1fr; }
+  #gallery h1 {
+    font-size: 56px; } }
