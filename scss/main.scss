@@ -88,6 +88,10 @@ main {
     border: $secondary-color 3px solid;
   }
 
+  a:hover {
+    color: $secondary-color;
+  }
+
   .bio {
     grid-area: bio;
     font-size: 1.5rem;
@@ -132,6 +136,9 @@ main {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(4, 1fr);
+}
+.portfolio-gallery .item img {
+  width: 110px;
 }
 
 // Contact Page
