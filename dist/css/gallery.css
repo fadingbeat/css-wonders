@@ -80,6 +80,24 @@
   background-color: #717171;
 }
 
+/* Remove Instagram feed widget logo */
+/* a.eapps-link {
+  background: none !important;
+  background-color: unset !important;
+}
+.eapps-remove-link {
+  background: unset !important;
+  box-shadow: unset !important;
+} */
+
+/*Instagram feed widget*/
+.eui-widget-title .eapps-instagram-feed-title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.eapps-instagram-feed-posts-grid-load-more-text.eapps-instagram-feed-posts-grid-load-more-text-visible {
+  background-color: #8e4162;
+}
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
