@@ -94,10 +94,11 @@
 .eui-widget-title .eapps-instagram-feed-title {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-.eapps-instagram-feed-posts-grid-load-more-text.eapps-instagram-feed-posts-grid-load-more-text-visible {
-  background-color: #8e4162;
+#eapps-instagram-feed-1 .eapps-instagram-feed-posts-grid-load-more {
+  background-color: #8e4162 !important;
 }
-.eapps-instagram-feed-posts-item-image-icon-carousel.eapps-instagram-feed-posts-item-image-icon {
+.eapps-instagram-feed-posts-item-type-carousel
+  .eapps-instagram-feed-posts-item-image-icon-carousel {
   display: none !important;
 }
 
