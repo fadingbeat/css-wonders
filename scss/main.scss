@@ -132,14 +132,18 @@ main {
 }
 
 // Gallery page
+.portfolio {
+  display: flex;
+}
 .portfolio-gallery {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 .portfolio-gallery .item img {
   width: 110px;
 }
+
 
 // Contact Page
 .boxes {
