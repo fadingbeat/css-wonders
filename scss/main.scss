@@ -195,11 +195,25 @@ main {
 }
 
 #main-footer {
-  text-align: center;
   padding: 1rem;
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
-  height: 60px;
+  height: 160px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  .links {
+    display: flex;
+    flex-direction: column;
+    a {
+      &:hover {
+        color: set-text-color($secondary-color);
+      }
+    }
+    
+  }
 }
 
 @import "mobile";
