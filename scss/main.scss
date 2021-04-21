@@ -195,10 +195,10 @@ main {
 }
 
 #main-footer {
-  padding: 1rem;
+  padding: 0.2rem;
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
-  height: 160px;
+  height: 60px;
 }
 
 .footer-container {
@@ -209,10 +209,9 @@ main {
     flex-direction: column;
     a {
       &:hover {
-        color: set-text-color($secondary-color);
-      }
+      color: #d1abbc;
     }
-    
+  }
   }
 }
 

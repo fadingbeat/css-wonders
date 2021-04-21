@@ -243,10 +243,10 @@ main {
   color: #333; }
 
 #main-footer {
-  padding: 1rem;
+  padding: 0.2rem;
   background: #262124;
   color: #fff;
-  height: 160px; }
+  height: 60px; }
 
 .footer-container {
   display: flex;
@@ -255,7 +255,7 @@ main {
     display: flex;
     flex-direction: column; }
     .footer-container .links a:hover {
-      color: #000; }
+      color: #d1abbc; }
 
 @media screen and (min-width: 1171px) {
   .projects {
