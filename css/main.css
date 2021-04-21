@@ -243,11 +243,19 @@ main {
   color: #333; }
 
 #main-footer {
-  text-align: center;
-  padding: 1rem;
+  padding: 0.2rem;
   background: #262124;
   color: #fff;
   height: 60px; }
+
+.footer-container {
+  display: flex;
+  justify-content: space-around; }
+  .footer-container .links {
+    display: flex;
+    flex-direction: column; }
+    .footer-container .links a:hover {
+      color: #d1abbc; }
 
 @media screen and (min-width: 1171px) {
   .projects {
