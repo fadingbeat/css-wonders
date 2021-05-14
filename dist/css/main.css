@@ -304,8 +304,18 @@ main {
     padding: 4rem 0; }
   main#home h1 {
     margin-top: 10vh; }
-  .projects,
+  .footer-container {
+    justify-content: space-evenly; }
+  .portfolio {
+    align-items: center; }
   .portfolio-gallery {
-    grid-template-columns: 1fr; }
+    grid-template-columns: repeat(5, 1fr); }
+    .portfolio-gallery .item img {
+      width: 25px; }
   #gallery h1 {
-    font-size: 56px; } }
+    font-size: 56px; }
+  .item {
+    font-size: 0.6em;
+    color: #d1abbc;
+    align-items: flex-start;
+    display: flex; } }
