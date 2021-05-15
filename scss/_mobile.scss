@@ -75,11 +75,32 @@
   main#home h1 {
     margin-top: 10vh;
   }
-  .projects,
 
-  .portfolio-gallery {
-    grid-template-columns: 1fr;
+  .footer-container {
+    justify-content: space-evenly;
+    .item {
+      font-size: 0.6em;
+      color: $link-hover-color;
+      align-items: flex-start;
+      display: flex;
+    }
   }
+  .portfolio {
+    align-items: center;
+  }
+  .portfolio-gallery {
+    grid-template-columns: repeat(5, 1fr);
+    .item {
+      font-size: 0.6em;
+      color: $link-hover-color;
+      align-items: flex-start;
+      display: flex;
+      img {
+        width: 25px;
+      }
+    }
+  }
+
   #gallery h1 {
     font-size: 56px;
   }
