@@ -4,6 +4,21 @@
   .projects {
     grid-template-columns: repeat(4, 1fr);
   }
+  .footer-container {
+    // justify-content: space-between;
+    margin: 0 1em;
+    .portfolio-gallery {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .item {
+      color: $link-hover-color;
+      align-items: flex-start;
+      display: flex;
+      img {
+        width: 60px;
+      }
+    }
+  }
 }
 
 // Desktops & Laptops
