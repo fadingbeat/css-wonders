@@ -259,7 +259,17 @@ main {
 
 @media screen and (min-width: 1171px) {
   .projects {
-    grid-template-columns: repeat(4, 1fr); } }
+    grid-template-columns: repeat(4, 1fr); }
+  .footer-container {
+    margin: 0 1em; }
+    .footer-container .portfolio-gallery {
+      grid-template-columns: repeat(4, 1fr); }
+    .footer-container .item {
+      color: #d1abbc;
+      align-items: flex-start;
+      display: flex; }
+      .footer-container .item img {
+        width: 60px; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects,
