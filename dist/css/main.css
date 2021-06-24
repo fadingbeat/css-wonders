@@ -206,6 +206,52 @@ main {
 .portfolio-gallery .item img {
   width: 110px; }
 
+.row {
+  margin: 8px -16px; }
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px; }
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: right;
+  width: 25%; }
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* Content */
+.content {
+  background-color: white;
+  color: #8e4162;
+  padding: 10px; }
+  .content a i {
+    float: right;
+    position: relative;
+    top: -6.34rem;
+    color: #8e4162; }
+
+.content a i {
+  top: -6.4rem; }
+
+.row2 .content img {
+  height: fit-content; }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%; } }
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%; } }
+
 .boxes {
   display: flex;
   flex-wrap: wrap;
