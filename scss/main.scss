@@ -145,6 +145,14 @@ main {
 }
 
 // Shutterstock Portfolio
+.shutterstock-gallery {
+  h2 {
+    // font-size: 42px;
+    background: $gradient-color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
 .row {
   margin: 8px -16px;
 }
@@ -170,7 +178,7 @@ main {
 
 /* Content */
 .content {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   color: $secondary-color;
   padding: 10px;
   a {
@@ -182,23 +190,11 @@ main {
     }
   }
 }
-// .content {
-//   i:nth-child(4) {
-//     display: none;
-//   }
-// }
+
 .content {
   a {
     i {
       top: -6.4rem;
-    }
-  }
-}
-
-.row2 {
-  .content {
-    img {
-      height: fit-content;
     }
   }
 }
@@ -208,12 +204,18 @@ main {
   .column {
     width: 50%;
   }
+  .row {
+    margin: unset;
+  }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
+  }
+  .row {
+    margin: unset;
   }
 }
 
