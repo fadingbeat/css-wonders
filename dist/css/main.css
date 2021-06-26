@@ -240,6 +240,13 @@ main {
     position: relative;
     top: -6.34rem;
     color: #8e4162; }
+  .content img {
+    opacity: 1;
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
+    .content img:hover {
+      opacity: 0.6;
+      cursor: pointer; }
 
 .content a i {
   top: -6.4rem; }
