@@ -57,7 +57,8 @@
       height: 250px;
       background: url("../img/avatar.jpg");
       border-radius: 50%;
-      border: solid 3px #8e4162; }
+      border: solid 3px #8e4162;
+      background-repeat: no-repeat; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -251,6 +252,16 @@ main {
 .content a i {
   top: -6.4rem; }
 
+.decorative-link {
+  background: linear-gradient(to bottom, #d1abbc 0%, #d1abbc 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  text-decoration: none;
+  transition: background-size 0.2s; }
+  .decorative-link:hover {
+    background-size: 4px 50px; }
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) {
   .column {
@@ -305,30 +316,69 @@ main {
   padding: 0.2rem;
   background: #262124;
   color: #fff;
-  height: 60px; }
+  text-align: center; }
+  #main-footer .footer-container {
+    display: unset !important; }
+    #main-footer .footer-container .item {
+      color: #d1abbc;
+      display: unset;
+      font-size: xx-large; }
+
+#footer-gallery {
+  padding: 0.2rem;
+  background: #262124;
+  color: #fff;
+  height: 160px; }
 
 .footer-container {
+  padding: 0 4rem;
   display: flex;
-  justify-content: space-around; }
-  .footer-container .links {
+  justify-content: space-between;
+  flex-direction: row;
+  max-width: 100%; }
+  .footer-container .columns-right {
     display: flex;
-    flex-direction: column; }
-    .footer-container .links a:hover {
+    justify-content: space-between; }
+  .footer-container .internal-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+    .footer-container .internal-links a {
+      padding: 0.5rem 1rem; }
+  .footer-container .external-links {
+    display: flex;
+    flex-direction: column;
+    direction: rtl; }
+    .footer-container .external-links a {
+      padding: 0.3rem 0; }
+  .footer-container .copyright-notice {
+    display: flex;
+    justify-content: center; }
+    .footer-container .copyright-notice a,
+    .footer-container .copyright-notice span {
+      padding: 2rem 1.5rem; }
+    .footer-container .copyright-notice a {
+      text-decoration: underline; }
+    .footer-container .copyright-notice span {
+      color: #8e4162; }
+  .footer-container .social-icons i {
+    padding-right: 1rem; }
+    .footer-container .social-icons i:hover {
       color: #d1abbc; }
+  .footer-container .column-1 h3 {
+    text-transform: uppercase; }
 
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); }
-  .footer-container {
-    margin: 0 1em; }
-    .footer-container .portfolio-gallery {
-      grid-template-columns: repeat(4, 1fr); }
-    .footer-container .item {
-      color: #d1abbc;
-      align-items: flex-start;
-      display: flex; }
-      .footer-container .item img {
-        width: 60px; } }
+  .footer-container .portfolio-gallery {
+    grid-template-columns: repeat(4, 1fr); }
+  .footer-container .item {
+    color: #d1abbc;
+    align-items: flex-start;
+    display: flex; }
+    .footer-container .item img {
+      width: 60px; } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects,
@@ -366,20 +416,38 @@ main {
     grid-template-columns: 1fr; }
   .projects,
   .portfolio-gallery {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 2.4rem; }
+  #footer-gallery {
+    height: unset; }
+  .footer-container {
+    font-size: xx-large;
+    text-align: center;
+    white-space: nowrap; }
+    .footer-container h3,
+    .footer-container p,
+    .footer-container .column-2 :not(:last-child),
+    .footer-container .column-3 {
+      display: none; }
+    .footer-container .column-1 {
+      align-self: center; } }
 
 @media screen and (max-width: 500px) {
   main {
     padding: 4rem 0; }
   main#home h1 {
     margin-top: 10vh; }
+  #main-footer .footer-container .item {
+    font-size: small; }
   .footer-container {
-    justify-content: space-evenly; }
-    .footer-container .item {
-      font-size: 0.6em;
-      color: #d1abbc;
-      align-items: flex-start;
-      display: flex; }
+    justify-content: space-evenly;
+    font-size: 100%;
+    flex-direction: column; }
+    .footer-container h3,
+    .footer-container p,
+    .footer-container .column-2 :not(:last-child),
+    .footer-container .column-3 {
+      display: none; }
   .portfolio {
     align-items: center; }
   .portfolio-gallery {
