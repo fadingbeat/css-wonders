@@ -351,6 +351,10 @@ main {
     direction: rtl; }
     .footer-container .external-links a {
       padding: 0.3rem 0; }
+    .footer-container .external-links .arrow {
+      margin-right: 15px;
+      color: #8e4162;
+      animation: slide1 1s ease-in-out infinite; }
   .footer-container .copyright-notice {
     display: flex;
     justify-content: center; }
@@ -368,6 +372,20 @@ main {
   .footer-container .column-1 h3 {
     text-transform: uppercase; }
 
+.company_contact {
+  text-decoration: underline;
+  text-decoration-color: #8e4162;
+  color: #d1abbc; }
+  .company_contact:hover {
+    color: #8e4162; }
+
+@keyframes slide1 {
+  0%,
+  100% {
+    transform: translate(0, 0); }
+  50% {
+    transform: translate(10px, 0); } }
+
 @media screen and (min-width: 1171px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); }
@@ -383,7 +401,11 @@ main {
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects,
   .portfolio-gallery {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  #footer-gallery {
+    height: unset; }
+  .column {
+    font-size: 60%; } }
 
 @media screen and (max-width: 768px) {
   main {

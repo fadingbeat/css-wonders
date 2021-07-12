@@ -25,6 +25,12 @@
   .portfolio-gallery {
     grid-template-columns: repeat(3, 1fr);
   }
+  #footer-gallery {
+    height: unset;
+  }
+  .column {
+    font-size: 60%;
+  }
 }
 
 // Tablets & Small Laptops
