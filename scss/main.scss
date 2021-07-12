@@ -342,6 +342,11 @@ main {
     a {
       padding: 0.3rem 0;
     }
+    .arrow {
+      margin-right: 15px;
+      color: $secondary-color;
+      animation: slide1 1s ease-in-out infinite;
+    }
   }
   .copyright-notice {
     display: flex;
@@ -370,6 +375,27 @@ main {
     h3 {
       text-transform: uppercase;
     }
+  }
+}
+
+// The company e-mail link styling
+.company_contact {
+  text-decoration: underline;
+  text-decoration-color: #8e4162;
+  color: #d1abbc;
+  &:hover {
+    color: #8e4162;
+  }
+}
+
+@keyframes slide1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(10px, 0);
   }
 }
 
