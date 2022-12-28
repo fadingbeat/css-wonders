@@ -1,5 +1,3 @@
-@import "config";
-
 h1::selection,
 .text-secondary::selection {
   background: #36454f8c;

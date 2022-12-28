@@ -197,6 +197,7 @@ main#home h1 {
 }
 main h2 {
   background: -webkit-linear-gradient(#ffffff, #708090);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -266,6 +267,7 @@ main h2 {
 
 .shutterstock-gallery h2 {
   background: -webkit-linear-gradient(#ffffff, #708090);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
