@@ -8,17 +8,7 @@
   <meta name="google-site-verification" content="J1EPcWmzA2OVWqau_Z-1_bsXi8CGWWT9VLBdmgTyABA" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/cssgen.css" />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T4P8SR9TJY"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
 
-    gtag("config", "G-T4P8SR9TJY");
-  </script>
   <script src="https://kit.fontawesome.com/ee21a338a9.js" crossorigin="anonymous"></script>
   <title>View My Work</title>
 </head>
@@ -54,6 +44,10 @@
       My
       <span class="text-secondary">Work</span>
     </h1>
+    <h2 class="sm-heading">GitHub Repositories</h2>
+    <div id="gh-repo-list" class="projects">
+
+    </div>
     <h2 class="sm-heading">Checkout the projects I have been a part of.</h2>
     <div class="projects">
       <div class="item">
@@ -85,11 +79,16 @@
     <div class="footer-container">
       <div class="item">
         <div class="copyright-item">
-          &copy; 2022
+          &copy; 2023
         </div>
       </div>
   </footer>
+
   <script src="js/main.js"></script>
+  <!-- <script type='text/javascript' src='../config.js'></script> -->
+  <script type="module" src="js/work.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 </body>
 
 </html>
