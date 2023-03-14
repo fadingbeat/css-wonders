@@ -1,15 +1,13 @@
-@import "config";
-
 h1::selection,
 .text-secondary::selection {
-  background: #36454f8c;
+  background: #b7426a;
   color: darkgrey;
 }
 
 .text-primary::selection {
-  background: #36454f8c;
+  background: #114060;
 }
 
 h2::selection {
-  background: #36454f8c;
+  background: rgba(17, 64, 96, 0.33);
 }

@@ -7,3 +7,5 @@ myportfolio_workspace.code-workspace
 .vscode/
 
 .env
+
+config.js
