@@ -49,7 +49,7 @@
 .menu-nav {
   margin: 0;
   padding: 0;
-  background: #2c3840;
+  background: #0d324a;
   list-style: none;
   transform: translate3d(0, -100%, 0);
   transition: all 0.5s ease-out;
@@ -58,7 +58,7 @@
   transform: translate3d(0, 0, 0);
 }
 .menu-branding {
-  background: #36454f;
+  background: #114060;
   transform: translate3d(0, 100%, 0);
   transition: all 0.5s ease-out;
 }
@@ -68,9 +68,9 @@
 .menu-branding .portrait {
   width: 250px;
   height: 250px;
-  background: url("../img/avatar.jpg");
+  background: url("../img/avatar.png");
   border-radius: 50%;
-  border: solid 3px #708090;
+  border: solid 3px #b7426a;
   background-repeat: no-repeat;
 }
 .menu .nav-item {
@@ -81,7 +81,7 @@
   transform: translate3d(0, 0, 0);
 }
 .menu .nav-item.current > a {
-  color: #708090;
+  color: #b7426a;
 }
 .menu .nav-link {
   display: inline-block;
@@ -95,7 +95,7 @@
   transition: all 0.5s ease-out;
 }
 .menu .nav-link:hover {
-  color: #708090;
+  color: #b7426a;
 }
 
 .nav-item:nth-child(1) {
@@ -119,8 +119,11 @@
 }
 
 body {
-  background: #36454f;
+  background: #114060;
   color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -139,7 +142,7 @@ body#bg-img::after {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: rgba(54, 69, 79, 0.7);
+  background: rgba(17, 64, 96, 0.8);
 }
 
 h1,
@@ -172,7 +175,7 @@ header {
 }
 
 .text-secondary {
-  color: #708090;
+  color: #b7426a;
 }
 
 main {
@@ -186,7 +189,7 @@ main .icons a {
   padding: 0.4rem;
 }
 main .icons a:hover {
-  color: #708090;
+  color: #b7426a;
   transition: all 0.5s ease-out;
 }
 main#home {
@@ -196,7 +199,7 @@ main#home h1 {
   margin-top: 20vh;
 }
 main h2 {
-  background: -webkit-linear-gradient(#ffffff, #708090);
+  background: -webkit-linear-gradient(#ffffff, #b7426a);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -212,10 +215,10 @@ main h2 {
   grid-area: bioimage;
   margin: auto;
   border-radius: 50%;
-  border: #708090 3px solid;
+  border: #b7426a 3px solid;
 }
 .about-info a:hover {
-  color: #708090;
+  color: #b7426a;
 }
 .about-info .bio {
   grid-area: bio;
@@ -231,9 +234,13 @@ main h2 {
   grid-area: job3;
 }
 .about-info .job {
-  background: #40525e;
+  background: #154e76;
   padding: 0.5rem;
-  border-bottom: #708090 5px solid;
+  border-bottom: #b7426a 5px solid;
+}
+
+#work {
+  background-image: url("../dist/img/background1.jpg");
 }
 
 .projects {
@@ -247,7 +254,7 @@ main h2 {
 }
 .projects img:hover {
   opacity: 0.5;
-  border-color: #708090;
+  border-color: #b7426a;
   transition: all 0.5s ease-out;
 }
 
@@ -266,7 +273,7 @@ main h2 {
 }
 
 .shutterstock-gallery h2 {
-  background: -webkit-linear-gradient(#ffffff, #708090);
+  background: -webkit-linear-gradient(#ffffff, #b7426a);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -298,14 +305,14 @@ main h2 {
 /* Content */
 .content {
   background-color: rgba(255, 255, 255, 0.8);
-  color: #708090;
+  color: #b7426a;
   padding: 10px;
 }
 .content a i {
   float: right;
   position: relative;
   top: -6.34rem;
-  color: #708090;
+  color: #b7426a;
 }
 .content img {
   opacity: 1;
@@ -322,7 +329,7 @@ main h2 {
 }
 
 .decorative-link {
-  background: linear-gradient(to bottom, #c0b5ba 0%, #c0b5ba 100%);
+  background: linear-gradient(to bottom, #327d8e 0%, #327d8e 100%);
   background-position: 0 100%;
   background-repeat: repeat-x;
   background-size: 4px 4px;
@@ -367,7 +374,7 @@ main h2 {
 }
 .boxes div:hover {
   padding: 0.5rem 1.5rem;
-  background: #708090;
+  background: #b7426a;
   color: #000;
 }
 .boxes div:hover span {
@@ -381,7 +388,7 @@ main h2 {
   margin-bottom: 0.3rem;
 }
 .btn:hover, .btn-dark:hover {
-  background: #708090;
+  background: #b7426a;
   color: #000;
 }
 
@@ -391,18 +398,16 @@ main h2 {
 }
 
 .btn-dark {
-  background: #b7c4cd;
+  background: #86c1ea;
   color: #333;
 }
 
 #main-footer {
   padding: 0.2rem;
-  background: #212b31;
+  background: #092335;
   color: #fff;
+  margin-top: auto;
   text-align: center;
-}
-#main-footer .footer-container {
-  display: unset !important;
 }
 #main-footer .footer-container .item {
   color: #d1abbc;
@@ -410,12 +415,12 @@ main h2 {
   font-size: xx-large;
 }
 #main-footer .copyright-item {
-  color: #708090;
+  color: #b7426a;
 }
 
 #footer-gallery {
   padding: 0.2rem;
-  background: #212b31;
+  background: #092335;
   color: #fff;
   height: fit-content;
 }
@@ -423,7 +428,7 @@ main h2 {
 .footer-container {
   padding: 0 4rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
   max-width: 100%;
 }
@@ -448,11 +453,11 @@ main h2 {
   padding: 0.3rem 0;
 }
 .footer-container .external-links a:hover {
-  color: #c0b5ba;
+  color: #327d8e;
 }
 .footer-container .external-links .arrow {
   margin-right: 15px;
-  color: #708090;
+  color: #b7426a;
   animation: slide1 1s ease-in-out infinite;
 }
 .footer-container .copyright-notice {
@@ -467,13 +472,13 @@ main h2 {
   text-decoration: underline;
 }
 .footer-container .copyright-notice span {
-  color: #708090;
+  color: #b7426a;
 }
 .footer-container .social-icons i {
   padding-right: 1rem;
 }
 .footer-container .social-icons i:hover {
-  color: #c0b5ba;
+  color: #327d8e;
 }
 .footer-container .column-1 h3 {
   text-transform: uppercase;
@@ -481,11 +486,11 @@ main h2 {
 
 .company_contact {
   text-decoration: underline;
-  text-decoration-color: #36454f;
-  color: #708090;
+  text-decoration-color: #114060;
+  color: #b7426a;
 }
 .company_contact:hover {
-  color: #c0b5ba;
+  color: #327d8e;
 }
 
 @keyframes slide1 {
@@ -504,7 +509,7 @@ main h2 {
     grid-template-columns: repeat(4, 1fr);
   }
   .footer-container .item {
-    color: #c0b5ba;
+    color: #327d8e;
     align-items: flex-start;
     display: flex;
   }
@@ -553,7 +558,7 @@ main h2 {
     transform: translate3d(100%, 0, 0);
   }
   .menu-branding .portrait {
-    background: url("../img/avatar-sm.jpg");
+    background: url("../img/avatar-sm.png");
     width: 100px;
     height: 100px;
   }
@@ -613,7 +618,7 @@ main h2 {
   }
   .portfolio-gallery .item {
     font-size: 0.6em;
-    color: #c0b5ba;
+    color: #327d8e;
     align-items: flex-start;
     display: flex;
   }

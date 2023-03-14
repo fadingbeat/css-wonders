@@ -1,10 +1,10 @@
-$link-hover-color: #c0b5ba;
-$gradient-color: -webkit-linear-gradient(#ffffff, #708090);
-$primary-color: #36454f;
-$secondary-color: #708090;
+$link-hover-color: #327d8e;
+$gradient-color: -webkit-linear-gradient(#ffffff, #b7426a);
+$primary-color: #114060;
+$secondary-color: #b7426a;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
-$background-opacity: 0.7;
+$background-opacity: 0.8;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;

@@ -9,6 +9,9 @@ body {
   @include background;
   background: $primary-color;
   color: set-text-color($primary-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -122,6 +125,12 @@ main {
     padding: 0.5rem;
     border-bottom: $secondary-color 5px solid;
   }
+}
+
+// Add background image to work page
+
+#work {
+  background-image: url("../dist/img/background1.jpg");
 }
 
 // Work/Projects
@@ -308,10 +317,10 @@ main {
   padding: 0.2rem;
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
+  margin-top: auto;
   // height: 60px;
   text-align: center;
   .footer-container {
-    display: unset !important;
     .item {
       color: #d1abbc;
       display: unset;
@@ -332,7 +341,7 @@ main {
 .footer-container {
   padding: 0 4rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
   max-width: 100%;
   .columns-right {
