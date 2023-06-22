@@ -258,29 +258,57 @@ main h2 {
   transition: all 0.5s ease-out;
 }
 
-.portfolio {
-  display: flex;
+#form-submission {
+  width: 50%;
+  max-width: 70%;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 
-.portfolio-gallery {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(1, 1fr);
+.form-group {
+  margin-bottom: 20px;
 }
 
-.portfolio-gallery .item img {
-  width: 110px;
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-.shutterstock-gallery h2 {
-  background: -webkit-linear-gradient(#ffffff, #b7426a);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-.row {
-  margin: 8px -16px;
+.form-group textarea {
+  height: 120px;
+}
+
+.form-group button {
+  background-color: #b7426a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: white;
+  color: #b7426a;
+}
+
+.form-group button:active {
+  border: 2px solid #b7426a;
+}
+
+#confirmation-note {
+  padding: 25px 0;
 }
 
 /* Add padding BETWEEN each column (if you want) */

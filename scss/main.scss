@@ -150,30 +150,57 @@ main {
   }
 }
 
-// Gallery page
-.portfolio {
-  display: flex;
-}
-.portfolio-gallery {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(1, 1fr);
-}
-.portfolio-gallery .item img {
-  width: 110px;
+// Contact page
+
+#form-submission {
+  width: 50%;
+  max-width: 70%;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
 }
 
-// Shutterstock Portfolio
-.shutterstock-gallery {
-  h2 {
-    background: $gradient-color;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+.form-group {
+  margin-bottom: 20px;
 }
-.row {
-  margin: 8px -16px;
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-group textarea {
+  height: 120px;
+}
+
+.form-group button {
+  background-color: $secondary-color;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: white;
+  color: $secondary-color;
+}
+.form-group button:active {
+  border: 2px solid $secondary-color;
+}
+#confirmation-note {
+  padding: 25px 0;
 }
 
 /* Add padding BETWEEN each column (if you want) */
