@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/cssgen.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="https://kit.fontawesome.com/ee21a338a9.js" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init('SeaHlLyvttVosqqOa');
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('form-submission').addEventListener('submit', function (event) {
+        event.preventDefault();
+        this.contact_number.value = Math.random() * 100000 | 0;
+        emailjs.sendForm('contact_service', 'template_hxpu0sj', this)
+          .then(function () {
+            console.log('SUCCESS!');
+          }, function (error) {
+            console.log('FAILED...', error);
+          });
+
+      });
+    }
+
+  </script>
+  <title>Contact me</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+
+    <nav class="menu">
+      <div class="menu-branding">
+        <div class="portrait"></div>
+      </div>
+      <ul class="menu-nav">
+        <li class="nav-item current">
+          <a href="index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="work.html" class="nav-link">My Work</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contact">
+    <h1 class="lg-heading">Contact <span class="text-secondary">Me</span></h1>
+    <form id="form-submission">
+      <input type="hidden" name="contact_number">
+      <div id="confirmation-note"></div>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="" required>
+      </div>
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" value="" required></textarea>
+      </div>
+      <div class="form-group" id="btn-submission">
+        <button type="submit" value="Send" onclick="resetForm()">Submit</button>
+      </div>
+    </form>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
